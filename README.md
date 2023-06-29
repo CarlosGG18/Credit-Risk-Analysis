@@ -38,42 +38,27 @@ The `loan_int_rate` shows a significant correlation with `loan_grade`. As the lo
 The target variable, `loan_status`, is correlated with `person_home_ownership`,` loan_int_rate`, `and loan_grade`.
 
 ## Model Results
-Three models were trained and evaluated: Logistic Regression, Ridge Classifier, and XGBoost Classifier. Here are the performance metrics for each model:
+Three models were trained and evaluated: Logistic Regression,Linear Regression, Random Forest, Support Vector Machine, Light GBM, Ridge Classifier, and XGBoost Classifier. Here are the performance metrics for each model:
 
-**Logistic Regression Model:**
+| Model                   | Accuracy Score | Precision Score | Recall Score | F1 Score |
+|-------------------------|----------------|-----------------|--------------|----------|
+| Logistic Regression     | 0.784          | 0.500           | 0.778        | 0.609    |
+| Ridge Classifier        |                |                 |              |          |
+| - Train Set             | 0.79           | 0.52            | 0.78         | 0.61     |
+| - Test Set              | 0.78           | 0.50            | 0.75         | 0.60     |
+| Random Forest           |                |                 |              |          |
+| - Train Set             | 0.79           | 0.51            | 0.77         | 0.61     |
+| - Test Set              | 0.78           | 0.50            | 0.75         | 0.60     | 
+| Ridge Classifier        |                |                 |              |          |
+| - Train Set             | 0.97           | 0.99            | 0.86         | 0.92     |
+| - Test Set              | 0.93           | 0.91            | 0.72         | 0.80     | 
+| XGBoost                 |                |                 |              |          |
+| - Train Set             | 0.98           | 0.99            | 0.91         | 0.95     |
+| - Test Set              | 0.94           | 0.94            | 0.73         | 0.82     |
+| LightGBM                |                |                 |              |          |
+| - Train Set             | N/A            | N/A            | N/A         | N/A     |
+| - Test Set              | N/A            | N/A            | N/A         | N/A     | 
 
-Train Set:
-Accuracy Score: 0.784
-Precision Score: 0.500
-Recall Score: 0.778
-F1 Score: 0.609
-Ridge Classifier Model:
-
-Test Set:
-Accuracy Score: 0.789
-
-Precision Score: 0.507
-
-Recall Score: 0.770
-
-F1 Score: 0.612
-
-**XGBoost Classifier Model:**
-
-Accuracy Score: 0.933
-Precision Score: N/A
-Recall Score: N/A
-F1 Score: N/A
-The XGBoost classifier demonstrated superior performance with an accuracy score of 0.933.
-
-Furthermore, a GridSearchCV was conducted on the XGBoost classifier, resulting in the best estimator with the following performance metrics:
-
-**XGBoost Grid Classifier Model:**
-
-Accuracy Score: 0.931
-Precision Score: 0.998
-Recall Score: 0.901
-F1 Score: 0.951 
 
 **LightGBM Classifier:**
 In addition to the previous models, a LightGBM classifier was trained and evaluated. Light Gradient Boosting uses a leaf-wise tree growth strategy, which can lead to faster convergence and potentially better accuracy compared to other gradient boosting algorithms. Noteworthy features of LightGBM include its ability to handle categorical variables without one-hot encoding, customizable loss functions, and quickness.
