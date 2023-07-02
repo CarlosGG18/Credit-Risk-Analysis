@@ -1,7 +1,7 @@
 # Credit Risk Analysis
 ![image](https://github.com/CarlosGG18/Credit-Risk-Analysis/assets/117116368/08d9363f-c398-479d-b68f-119079d38ab1)
 
-This project focuses on analyzing credit risk in financial institutions and developing predictive models to assess the probability of default for potential borrowers. The dataset used for this analysis contains various features related to borrowers' characteristics and loan details.
+This project focuses on analyzing credit risk in financial institutions and developing predictive models to assess the probability of default for potential borrowers. The dataset used for this analysis contains various features related to borrowers' characteristics and loan details. Credit risks are commonly observed in financial areas such as mortgages, credit cards, and loans. There is always a possibility that the borrower may not repay the borrowed amount. Traditionally, credit risk refers to the risk faced by a lender of not receiving the principal and interest owed, leading to disruptions in cash flows and increased collection costs so in order to streamline risk assesment of a potential borrower, you can use the models below to accuretly predict their approval probability.
 
 ## Dataset Description
 The Credit Risk dataset consists of the following features:
