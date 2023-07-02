@@ -1,4 +1,6 @@
 # Credit Risk Analysis
+![image](https://github.com/CarlosGG18/Credit-Risk-Analysis/assets/117116368/08d9363f-c398-479d-b68f-119079d38ab1)
+
 This project focuses on analyzing credit risk in financial institutions and developing predictive models to assess the probability of default for potential borrowers. The dataset used for this analysis contains various features related to borrowers' characteristics and loan details.
 
 ## Dataset Description
@@ -50,7 +52,7 @@ The target variable, `loan_status`, is correlated with `person_home_ownership`,`
 
 
 ## Model Results
-Three models were trained and evaluated: Logistic Regression,Linear Regression, Random Forest, Support Vector Machine, Light GBM, Ridge Classifier, and XGBoost Classifier. Here are the performance metrics for each model:
+The models trained and evaluated: Logistic Regression,Linear Regression, Random Forest, Support Vector Machine, Light GBM, Ridge Classifier, and XGBoost Classifier. Here are the performance metrics for each model:
 
 | Model                   | Accuracy Score | Precision Score | Recall Score | F1 Score |
 |-------------------------|----------------|-----------------|--------------|----------|
